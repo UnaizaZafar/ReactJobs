@@ -1,0 +1,19 @@
+[
+    {
+        "id":1,
+        "title":"React.js Developer",
+        "type":"Full-time",
+        "Description":"Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
+        "location":"Brooklyn, NY",
+        "salary":"$70K - $80K",
+        "company":{
+            "name":"Dolor Cloud",
+            "description":"Dolor Cloud is a leading technology cimpany specializing in digital solutions for businesses of all sizes.",
+            "contactEmail":"contact@ipsumlorem.com",
+            "contactPhone":"55-555-555"
+        }
+    },
+    {
+
+    }
+]
