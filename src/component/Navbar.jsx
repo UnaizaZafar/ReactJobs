@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "D:/AgIT/react-jobs/src/images/React_(web_framework)-Logo.wine.png";
+import logo from "../images/React_(web_framework)-Logo.wine.png";
 
 function Navbar() {
   return (
