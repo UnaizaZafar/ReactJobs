@@ -1,16 +1,31 @@
- import './App.css';
-import Hero from "./component/Hero"
-import HomeCards from './component/HomeCards';
-import JobsListing from './component/JobsListing';
-import ViewAllJobs from './component/ViewAllJobs';
+import {
+  Route,
+  Router,
+  RouterProvider,
+  createRoutesFromElements,
+  createBrowserRouter,
+} from "react-router-dom";
+import "./App.css";
+import StartPage from "./pages/StartPage";
+import AddJobs from "./pages/AddJobs";
+import Jobs from "./pages/Jobs";
+
+import MainLayout from "./layouts/MainLayout";
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<StartPage />} />
+      <Route path="/jobs" element={<StartPage />} />
+      <Route path="/add-job" element={<StartPage />} />
+
+    </Route>
+  )
+);
 function App() {
   return (
-   <>
-       <Hero title="Become a React Dev" subtitle="Find the React job that fits your skills and needs"/>
-      <HomeCards/>
-      <JobsListing/>
-      <ViewAllJobs/>
-   </>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

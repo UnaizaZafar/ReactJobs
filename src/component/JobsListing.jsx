@@ -2,6 +2,7 @@ import React from "react";
 import jobs from "../jobs.json";
 import JobList from "./JobList";
 function JobsListing() {
+ 
   console.log("Jobs ", jobs);
   const recentJobs = jobs.slice(0, 3);
   return (
@@ -11,7 +12,7 @@ function JobsListing() {
     
       <div className="grid mx-16 p-5 grid-cols-3 ">
       
-        {jobs.map((xyz) => {
+        {recentJobs.map((xyz) => {
           return (
             <>
               <JobList key={xyz.id} job={xyz} />
