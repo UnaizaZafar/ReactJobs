@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
+import { Link } from "react-router-dom";
 import Buttons from "./Buttons";
 function HomeCards() {
   return (
@@ -11,7 +12,7 @@ function HomeCards() {
             Browse our React Jobs and start your career today!
           </p>
           <div className=" bg-black p-3 text-white w-fit rounded-lg mt-2 mb-4"> 
-            <button>Browse Jobs</button>
+            <Link to='/jobs'>Browse Jobs</Link>
             </div>
           {/* <Buttons>
             <h2>Browse Jobs</h2>
@@ -24,7 +25,7 @@ function HomeCards() {
             List your job to find the perfect developer for the role!
           </p>
           <div className=" bg-indigo-700 p-3 text-white w-fit rounded-lg mt-2 mb-4"> 
-            <button>Add Job</button>
+            <Link to='/add-job'>Add Job</Link>
             </div>
           {/* <Buttons bg="bg-indigo-700">
            <h2>Add Job</h2>

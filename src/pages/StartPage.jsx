@@ -13,7 +13,7 @@ function StartPage() {
         subtitle="Find the React job that fits your skills and needs"
       />
       <HomeCards />
-      <JobsListing />
+      <JobsListing isHome={true}/>
       <ViewAllJobs />
     </div>
   )
