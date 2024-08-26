@@ -1,22 +1,27 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import {toast} from 'react-toastify';
+import { toast } from "react-toastify";
+import { useNavigate, useParams, useLoaderData } from "react-router-dom";
 
-function AddJobs({ addJobSubmit }) {
-  const [title, setTitle] = useState("");
-  const [type, setType] = useState("Full-time");
-  const [location, setLocation] = useState("");
-  const [description, setDescription] = useState("");
-  const [salary, setSalary] = useState("under $50K");
-  const [companyName, setCompanyName] = useState("");
-  const [companyDescription, setCompanyDescription] = useState("");
-  const [companyEmail, setCompanyEmail] = useState("");
-  const [companyPhone, setCompanyPhone] = useState("");
+const EditJob = ({ updateJobSubmit }) => {
+  const job = useLoaderData();
+  const [title, setTitle] = useState(job.title);
+  const [type, setType] = useState(job.type);
+  const [location, setLocation] = useState(job.location);
+  const [description, setDescription] = useState(job.Description);
+  const [salary, setSalary] = useState(job.salary);
+  const [companyName, setCompanyName] = useState(job.company.name);
+  const [companyDescription, setCompanyDescription] = useState(
+    job.company.description
+  );
+  const [companyEmail, setCompanyEmail] = useState(job.company.contactEmail);
+  const [companyPhone, setCompanyPhone] = useState(job.company.contactPhone);
   const navigate = useNavigate();
+  const { id } = useParams();
   const submitForm = (e) => {
     e.preventDefault();
-    const newJob = {
+    const updatedJob = {
+      id,
       title,
       type,
       location,
@@ -29,11 +34,11 @@ function AddJobs({ addJobSubmit }) {
         contactPhone: companyPhone,
       },
     };
-    addJobSubmit(newJob);
-    
-    toast.success('Job Added Successfully!')
-    
-    return navigate("/jobs");
+    updateJobSubmit(updatedJob);
+
+    toast.success("Job Updated Successfully!");
+
+    return navigate(`/jobs/${id}`);
   };
 
   return (
@@ -43,7 +48,7 @@ function AddJobs({ addJobSubmit }) {
           onSubmit={submitForm}
           className="bg-white rounded-md flex flex-col gap-2 mx-auto  w-full max-w-3xl shadow-sm p-6"
         >
-          <h1 className="text-3xl font-bold text-center">Add Job</h1>
+          <h1 className="text-3xl font-bold text-center">Update Job</h1>
           <label htmlFor="" className="font-bold text-base">
             Job Type
           </label>
@@ -157,12 +162,12 @@ function AddJobs({ addJobSubmit }) {
             type="submit"
             className=" flex items-end rounded-xl w-max bg-indigo-600 text-white p-2"
           >
-            Submit
+            Update Job
           </button>
         </form>
       </div>
     </>
   );
-}
+};
 
-export default AddJobs;
+export default EditJob;

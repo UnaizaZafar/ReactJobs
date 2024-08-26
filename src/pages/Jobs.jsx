@@ -4,7 +4,7 @@ import JobsListing from '../component/JobsListing'
 function Jobs() {
   return (
     <>
-    <JobsListing/>
+    <JobsListing  />
     </>
   )
 }

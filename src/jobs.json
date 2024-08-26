@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "React.js Developer",
       "type": "Full-time",
       "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "React.js Developer",
       "type": "Full-time",
       "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "React.js Developer",
       "type": "Full-time",
       "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "React.js Developer",
       "type": "Full-time",
       "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
@@ -57,7 +57,21 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
+      "title": "React.js Dev",
+      "type": "Full-time",
+      "location": "Brooklyn, NY",
+      "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
+      "salary": "$70K - $80K",
+      "company": {
+        "name": "Dolor Cloud",
+        "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes.",
+        "contactEmail": "contact@ipsumlorem.com",
+        "contactPhone": "55-555-555"
+      }
+    },
+    {
+      "id": "6",
       "title": "React.js Developer",
       "type": "Full-time",
       "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
@@ -71,17 +85,17 @@
       }
     },
     {
-      "id": 6,
-      "title": "React.js Developer",
-      "type": "Full-time",
-      "Description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensention and a collaborative work environment where your ideas are valued",
-      "location": "Brooklyn, NY",
-      "salary": "$70K - $80K",
+      "id": "d85e",
+      "title": "React Basics",
+      "type": "Internship",
+      "location": "Remote",
+      "Description": "Learn the basics of React, such as components, props, state, data fetching, and more, while building a job listing frontend.",
+      "salary": "under $50K",
       "company": {
-        "name": "Dolor Cloud",
-        "description": "Dolor Cloud is a leading technology cimpany specializing in digital solutions for businesses of all sizes.",
-        "contactEmail": "contact@ipsumlorem.com",
-        "contactPhone": "55-555-555"
+        "name": "ABC",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae orci quis purus sodales facilisis sed vel lacus. Vestibulum aliquam sapien id quam pretium, ut scelerisque felis vulputate. Suspendisse quis pretium nisl. Pellentesque egestas justo a turpis gravida finibus. Vivamus eleifend orci nisi, non tincidunt lorem hendrerit non. Aenean fermentum tincidunt sodales. In nec nunc urna.",
+        "contactEmail": "test@test.com",
+        "contactPhone": "532-342-342"
       }
     }
   ]

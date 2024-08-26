@@ -33,7 +33,8 @@ const JobsListing = ({ isHome = false }) => {
         {loading ? (
           <Spinners loading={loading} />
         ) : (
-          <div className="flex flex-wrap gap-4 p-5 justify-center ">
+          
+          <div className="flex flex-wrap gap-4 p-5 justify-around  ">
             {jobs.map((job) => (
               <JobCards key={job.id} job={job} />
             ))}
